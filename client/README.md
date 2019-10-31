@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,8 +14,13 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 
-# server local connection base url is helpers api.js file 
+# server connection  for client
 
+server baseurl path is in -> helpers  -> api.js file 
+
+## description 
+
+when you perform search action in map.the marker will get placed and save in data base & retrives the all marker that is placed in database.
 
 
 ### `npm test`
