@@ -1,0 +1,103 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color:white;
+  min-height: 100vh;
+  display: flex;
+  /* flex:1; */
+ flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+.search {  
+  flex: 1;  
+}
+
+
+.nav-side{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+ 
+  margin-top:10px
+  
+}
+.nav-row{
+  flex-direction:column;
+  border-top: 1px solid grey;
+  margin:10px;
+ 
+}
+
+.title{
+  border:0.5 grey;
+  height: 80px;
+  display:flex;
+  /* width:100%; */
+ /* margin:10px; */
+  background-color: #aa1b41;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+  
+
+}
+
+.inputbox{
+  display:flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  margin:10px;
+}
+
+.textinputbox{
+  display:flex;
+  /* justify-content: center; */
+  flex-direction:row;
+}
+.texting{
+ 
+ display:flex;
+ font-size:20px;
+ /* justify-content: center; */
+
+}
+.containerstyle{
+margin-top:30px
+}
+input[type=checkbox]{
+  margin-right: 2rem;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+}
+
+.buttoncolor{
+  background-color: coral;
+}
+
+
+
+
+
+
+
+
+
+
