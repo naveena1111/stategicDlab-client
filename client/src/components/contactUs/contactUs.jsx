@@ -4,6 +4,7 @@ import './contactUs.css';
 import L from 'leaflet';
 import { httpServices } from '../../helpers/api';
 import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
+// import './../../'
 
 const provider = new OpenStreetMapProvider({ params: { countrycodes: 'sg' }, });
 const searchControl = new GeoSearchControl({
@@ -85,237 +86,259 @@ export default class ContactUsComponent extends React.Component {
 
     }
 
+  
 
     render() {
-        var style = {
-            "border":"0.5 grey",
-            "height": "100px",
-            "display":"flex",
-            "backgroundColor": "#aa1b41",
-            "marginRight": "20px",
-            "marginLeft": "20px",
-            "justifyContent": "center",
-            "alignItems": "center"
-          };
+          var containerStyle = {
+            'margin-top':'30px'
+          }
         return (
             <div >
-                 <div style={style}>
+                 <div className="heading">
          <h1 className="text-white text">Contact Us </h1> 
       </div>
-      <div className="container containerstyle" >
-      <div className="col-lg-12">
-            <div className="row">
-                <div className="col-lg-6 text-center">
-                    <label className="font-weight-bold text-dark">MY NAME IS</label>
-                    <div className="form-group mx-sm-3 mb-2 text-dark">
-                        <input type="text" className="form-control" placeholder="Name"/>
+    
+      <div class="container" style={containerStyle}>
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-6 text-center ">
+                    <label class="font-weight-bold  text-clr">MY NAME IS</label>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control change" placeholder="Name"/>
                     </div>
                 </div>
-                <div className="col-lg-6 text-center text-dark">
-                    <label className="font-weight-bold">YOU CAN REACH ME AT</label>
-                    <div className="form-group mx-sm-3 mb-2">
-                        <input type="text" className="form-control" placeholder="Email"/>
+                <div class="col-lg-6 text-center">
+                    <label class="font-weight-bold  text-clr">YOU CAN REACH ME AT</label>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control change" placeholder="Email"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 innerCnt">
+            <div class="col-lg-12">
+                <div class="text-center py-4">
+                    <label class="font-weight-bold letterSpace-1 text-clr">I'M INTERESTED WITH</label>
+                </div>
+                <div class="content-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        Social media marketing
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                            <img src={require('./../../img/icon2.png')} alt="" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        accounts  marketing
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon3.png')} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        Lead Generation 
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon4.png')} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                          branching awareness
+                                      
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon6.png')}  alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        Web development
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon5.png')} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        Mobile development
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon6.png')} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        Content marketing
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon7.png')} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        Sales and channel 
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon8.png')} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                        performance Marketing
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon9.png')} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-3">
+                                        <input type="checkbox" class="largerCheckbox" />
+                                        </div>
+                                        <div class="col-lg-6 col-6 middle text-clr">
+                                            Account based marketing
+                                        </div>
+                                        <div class="col-lg-3 col-3 middle">
+                                        <img src={require('./../../img/icon10.png') } alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-12">
-            <div class="col-lg-12">
-                <div class="text-center py-4">
-                    <label class="font-weight-bold text-dark">I'M INTERESTED WITH</label>
-                </div>
-                <div class="row ">
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                        {/* <i class="fas fa-yin-yang"></i> */}
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                    Social media marketing
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                        {/* <i class="fas fa-yin-yang"></i> */}
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                   accounts  marketing
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-2 text-center text-dark">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                        {/* <i class="fas fa-yin-yang"></i> */}
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                      Lead Generation 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                        {/* <i class="fas fa-yin-yang"></i> */}
-                                    </div>
-                                    <div class="col-lg-9  text-dark texting">
-                                       Branching awareness
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                      Web development
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                       Mobile development
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                       Content marketing
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-2 text-center text-dark">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                    </div>
-                                    <div class="col-lg-9 texting">
-                                      Sales and channel 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="filterCheckbx" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                      performance Marketing
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-2 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                    <input class="checkmark" id="filter1" type="checkbox" name="section" value="Angewandte Ingenierwissenschaften"/>
-                                    </div>
-                                    <div class="col-lg-9 text-dark texting">
-                                      Growth hacking
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <div class="col-lg-12">
             <div class="col-lg-12  text-center">
                 <div class="form-group">
                     <textarea class="form-control" rows="5" placeholder="Message"></textarea>
                 </div>
-                <button type="button" className="buttoncolor btn btn-danger">submit</button>
+                <button type="button" class="btn btn-warning btnSubmit">Submit</button>
             </div>
         </div>
-       
-        <div className="mapstyle">
-      
-        <div class="jumbotron" style={{"marginTop":"30px"}}>
+    </div>
+
+    <div class="jumbotron" style={containerStyle}>
         <div class="container">
             <div class="col-lg-12">
-                <div class="col-lg-12">
+                <div class="col-lg-12 addressHead">
                     <div class="row">
-                        <div class="col-lg-4 text-left">
-                            <p class="font-weight-bold text-info">61 robinson road,#12-01</p>
-                            <p class="font-weight-bold text-info">robinson center,singapore</p>
+                        <div class="col-md-6 text-left addressHeadtext">
+                            <p class="font-weight-bold text-clr">61 Robinson road, #12-01</p>
+                            <p class="font-weight-bold text-clr">Robinson Centre, Singapore 068893</p>
                         </div>
-                        <div class="col-lg-4">
-                        </div>
-                        <div class="col-lg-4 text-left">
-                            <p class="font-weight-bold text-info">+6581156501</p>
-                            <p class="font-weight-bold text-info">enquiry@strategicdigitalab.com</p>
+                        <div class="col-md-6 text-right addressHeadtext">
+                            <p class="font-weight-bold text-clr">+65 6908 3770</p>
+                            <p class="font-weight-bold text-clr">enquiry@strategicdigitalab</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 text-center">
-                <div id="mapid">
-                </div>
-        </div>
+                <div class="col-lg-12 col-12 col-md-12 text-center">
+                    <div class="mapouter">
+                        <div id="mapid">
+                        </div>
+                     
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
                 
-            </div>
+          </div> 
         );
     }
 }

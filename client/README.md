@@ -13,6 +13,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+# Guidelines question answer
+
+1.we can handle the configuration values based on environment.
+
+2.we can show the specific error in the modal to end user and it does not affect the application.
+
+3.It will not break our application ,we can handle accordingly.
+
+4.while changing the thirdparty we need to work on configuration and new library installation.we should isolate the thirdparty libraries usage in our application then it will be easy to change the code.
+
+
 
 # server connection  for client
 
