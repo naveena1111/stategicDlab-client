@@ -40,7 +40,7 @@ class App extends React.Component {
                                     <a class="nav-link  font-weight-bold" href="#">CASE STUDIES</a>
                                 </li>
                                 <li class="nav-item letterSpace-2 mr-3 ">
-                                    <Link to="/" className="nav-link font-weight-bold active text-warning">CONTACT US</Link>
+                                    <Link to="/" className="nav-link font-weight-bold active">CONTACT US</Link>
                                 </li>
                             </ul>
                         </div>
