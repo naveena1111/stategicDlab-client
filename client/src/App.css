@@ -1,3 +1,5 @@
+
+
 .App {
   /* text-align: center; */
 }
@@ -86,16 +88,21 @@ input[type=checkbox]{
   height: 40px;
   width: 40px;
   min-width: 40px;
+  
 }
+
 
 .buttoncolor{
   background-color: coral;
 }
 
+.navtext{
+  font-family: 'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+}
 
-*{
-  font-family: oxygen;
-  }
+
   
    
   

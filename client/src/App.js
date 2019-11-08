@@ -31,16 +31,16 @@ class App extends React.Component {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item letterSpace-2 mr-4 ">
-                                    <Link to="/home" className="nav-link font-weight-bold ">ABOUT US</Link>                   {/* <a class="nav-link" href="#">ABOUT US <span class="sr-only">(current)</span></a> */}
+                                    <Link to="/home" className="nav-link navtext ">ABOUT US</Link>                   {/* <a class="nav-link" href="#">ABOUT US <span class="sr-only">(current)</span></a> */}
                                 </li>
                                 <li class="nav-item letterSpace-2 mr-4">
-                                    <a class="nav-link  font-weight-bold" href="#">SERVICES</a>
+                                    <a class="nav-link navtext " href="#">SERVICES</a>
                                 </li>
                                 <li class="nav-item letterSpace-2 mr-4">
-                                    <a class="nav-link  font-weight-bold" href="#">CASE STUDIES</a>
+                                    <a class="nav-link navtext " href="#">CASE STUDIES</a>
                                 </li>
                                 <li class="nav-item letterSpace-2 mr-3 ">
-                                    <Link to="/" className="nav-link font-weight-bold active">CONTACT US</Link>
+                                    <Link to="/" className="nav-link navtext">CONTACT US</Link>
                                 </li>
                             </ul>
                         </div>

@@ -57,11 +57,24 @@
  /* justify-content: center; */
 
 }
+.text{
+  font-family: 'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}
 .containerstyle{
 margin-top:30px
 }
 
-
+.fonts{
+  font-family: 'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 900;
+  color: #0a3871;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 
 .checkmark{
@@ -118,11 +131,17 @@ letter-spacing: 4px;
 }
 
 .text-clr{
-color:#4863A0
+color:#4863A0;
+font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;
+font-size: 14px;
 }
 
 input[type=text] {
-border: 1px solid #2B547E;
+border: 1px solid #0a3871;
+border-radius: 4px;
+}
+.messagetextarea{
+  border: 1px solid #0a3871;
 border-radius: 4px;
 }
 
@@ -167,6 +186,7 @@ padding: 2rem;
 .btnSubmit {
 border-radius: 40px;
 letter-spacing: 1px;
+background-color: #ff8500;
 }
 
 .gmap_canvas  {
@@ -174,10 +194,7 @@ width: 100%;
 height: 300px;
 }
 
-/* input.largerCheckbox {
-width: 40px;
-height: 40px;
-} */
+
 
 .middle {
 margin: auto;
@@ -185,27 +202,88 @@ vertical-align: middle;
 }
 
 .content-box .card {
-height: 86px;
+height: 70px;
+margin-bottom: 20px;
+padding-bottom: 10px;
 
 }
+.flex-container{
+  height:70px;
+  border :1px solid #dde3e5;
+  margin-bottom: 20px;
+}
+.cardtext{
+  float:left;
+  width:52%
+}
 
+.centertext{
+  color:#0a3871;
+  padding-left: 13px;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.colortext{
+  color: #f19437;
+  padding-left: 13px;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.checkcolor{
+left: 11px;
+top: 2px;
+width: 8px;
+height: 20px;
+border: solid orange;
+border-width: 0 5px 5px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+
+}
+.checkboxchecked{
+  /* padding: 7px; */
+  margin-left: 15px;
+  border: 2px solid navy;
+  float: left;
+  width: 44px;
+  height: 44px;
+  margin-top: 10px;
+}
+/* 
 .content-box .card .card-body {
 font-size: 12px;
 font-weight: bold;
+} */
+
+.icon-align{
+  padding-top: 10px;
 }
 
-
+.icon{
+  margin-top: 10px;
+}
 
 .fntsize{
 font-size:initial
 }
 
-input[type=checkbox]:checked:after   {
-content: url('./../../img/tick.png');
-
-
-
+.uncheckbox{
+  /* padding: 7px; */
+  margin-left: 15px;
+  border: 2px solid #ebeff0;
+  float: left;
+  width: 44px;
+  height: 44px;
+  margin-top: 10px;
 }
+
+
+
 
 
 .or-Text {
@@ -220,9 +298,21 @@ color: #f19437;
 
 .addressHead .addressHeadtext {
     text-align: center !important;
+    
 }
 #mapid {
   height: 200px;
 
 }
+}
+
+@media screen and (max-width: 600px) {
+  /* body {
+    background-color: olive;
+  } */
+  /* .flex-container{
+    height:44px;
+    width:130px;
+    border :1px solid #dde3e5
+  } */
 }
